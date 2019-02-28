@@ -1,12 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../../assets/logo.png">
-    <router-link to='/about'>About</router-link>
+  <div>
+    <hero></hero>
   </div>
 </template>
 
 <script>
+import Hero from '../Organisms/Hero'
+
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    Hero
+  }
 }
 </script>
