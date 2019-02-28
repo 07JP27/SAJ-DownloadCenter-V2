@@ -67,7 +67,7 @@ export default {
     position: relative;
     text-align: center;
     width: 100%;
-    height: 94vh;
+    height: 100vh;
 }
 .granim-wrapper canvas {
     position: absolute;

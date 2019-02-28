@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar dark color='#115740'>
+  <v-toolbar fixed dark color='#115740'>
     <img src="../../assets/logo.svg" height="90%" />
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
