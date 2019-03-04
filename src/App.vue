@@ -4,16 +4,19 @@
     <transition name='page-fade' mode='out-in'>
       <router-view/>
     </transition>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from './components/Organisms/Header'
+import Footer from './components/Organisms/Footer'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

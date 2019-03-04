@@ -23,15 +23,21 @@
     </vue-particles>
     <div id="main" class="has-text-centered">
       <h1 class="title is-1"><img src="../../assets/title.svg" /></h1>
+      <OutlineButton :href="link"></OutlineButton>
     </div>
 </div>
 </template>
 
 <script>
 import Granim from 'granim'
+import OutlineButton from '../Atoms/OutlineButton'
 
 export default {
   name: 'Hero',
+  components: {
+    OutlineButton
+  },
+  props: ['link'],
   data () {
     return {
       GraminObject: Object
@@ -57,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.title{
+  margin-bottom: 5rem;
+}
 #particles-js {
   position: inherit;
   display: flex;
@@ -81,7 +90,7 @@ export default {
 }
 #main {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   width: 80vw;
