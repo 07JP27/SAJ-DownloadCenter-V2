@@ -1,6 +1,8 @@
 <template>
   <v-toolbar fixed dark color='#115740'>
-    <img src="../../assets/logo.svg" height="90%" />
+    <router-link to="/">
+    <img alt="Logo" src="../../assets/logo.svg" height="50px" />
+    </router-link>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat>Link One</v-btn>

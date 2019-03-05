@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
 .title{
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 #particles-js {
   position: inherit;
