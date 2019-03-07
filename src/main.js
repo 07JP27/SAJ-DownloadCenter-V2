@@ -9,7 +9,9 @@ import VueParticles from 'vue-particles'
 
 Vue.config.productionTip = false
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  iconfont: 'md'
+})
 Vue.use(VueParticles)
 
 new Vue({

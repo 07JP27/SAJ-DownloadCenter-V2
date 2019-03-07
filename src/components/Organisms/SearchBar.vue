@@ -5,14 +5,10 @@
         </v-flex>
         <v-flex sm1 md1></v-flex>
         <v-flex xs3 sm1 md1>
-          <v-btn flat small>
-            <v-img src="../../assets/icon/th-solid.svg"/>
-          </v-btn>
+          <img src="../../assets/icon/th-solid.svg" class="icon-button" />
         </v-flex>
         <v-flex xs3 sm1 md1>
-          <v-btn flat small>
-            <v-img src="../../assets/icon/list-solid.svg" />
-          </v-btn>
+          <img src="../../assets/icon/list-solid.svg" class="icon-button" />
         </v-flex>
       </v-layout>
 </template>
@@ -22,3 +18,9 @@ export default {
   name: 'SearchBar'
 }
 </script>
+
+<style scoped>
+.icon-button{
+  height: 3rem;
+}
+</style>
