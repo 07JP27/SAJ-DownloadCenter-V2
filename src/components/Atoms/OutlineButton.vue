@@ -1,5 +1,5 @@
 <template>
-    <a class="btn-large" :href="link">PRツールを見る</a>
+  <a class="btn-large" :href="link">PRツールを見る</a>
 </template>
 
 <script>
