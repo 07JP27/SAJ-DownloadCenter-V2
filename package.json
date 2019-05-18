@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "babel-preset-vue": "^2.0.2",
+    "bootstrap-vue": "^2.0.0-rc.20",
     "granim": "^2.0.0",
     "vue": "^2.6.6",
     "vue-particles": "^1.0.9",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.5.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
