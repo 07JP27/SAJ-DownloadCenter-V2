@@ -1,14 +1,14 @@
 <template>
-  <v-toolbar fixed dark color='#115740'>
+  <b-navbar>
     <router-link to="/">
-    <img alt="Logo" src="../../assets/logo.svg" height="50px" />
+      <b-navbar-brand>
+        <img alt="Logo" src="../../assets/logo.svg" height="50px" />
+      </b-navbar-brand>
     </router-link>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn :data-index="index" :key="prTool.id" v-for="(prTool, index) in prTools" flat >{{prTool.title}}</v-btn>
-    </v-toolbar-items>
-    <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
-  </v-toolbar>
+    <b-navbar-nav class="ml-auto">
+      <a class="header-link" :data-index="index" :key="prTool.id" v-for="(prTool, index) in prTools" flat >{{prTool.title}}</a>
+    </b-navbar-nav>
+  </b-navbar>
 </template>
 
 <script>
@@ -21,5 +21,12 @@ export default {
 </script>
 
 <style scoped>
-
+.navbar {
+  padding: 0 1rem;
+  color: white;
+  background-color: #115740;
+}
+.header-link{
+  margin-right: 1rem;
+}
 </style>
