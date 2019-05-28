@@ -1,13 +1,11 @@
 <template>
     <div class="card-group">
       <h1>{{title}}</h1>
-      <v-container fluid grid-list-md class="card-group-body">
-        <v-layout row wrap>
-          <v-flex xs6 md3 :data-index="index" :key="card.id" v-for="(card, index) in cards">
-            <card :title="card.title" :img="card.img" :link="card.link"></card>
-          </v-flex>
-        </v-layout>
-      </v-container>
+      <b-card-group>
+        <div :data-index="index" :key="card.id" v-for="(card, index) in cards">
+        <card :title="card.title" :img="card.img" :link="card.link"></card>
+        </div>
+      </b-card-group>
     </div>
 </template>
 

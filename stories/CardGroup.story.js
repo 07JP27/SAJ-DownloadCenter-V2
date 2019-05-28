@@ -8,6 +8,7 @@ storiesOf('CardGroup', module)
     },
     data () {
       return {
+        title: 'タイトルタイトル',
         data: [
           { title: 'ガイドライン', img: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', link: '/brandguide.pdf' },
           { title: 'コミュニケーションロゴ', img: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', link: '/brandguide.pdf' },
@@ -24,5 +25,5 @@ storiesOf('CardGroup', module)
         ]
       }
     },
-    template: `<div><CardGroup :cards="data"></CardGroup></div>`
+    template: `<div><CardGroup :cards="data" :title="title"></CardGroup></div>`
   }))
