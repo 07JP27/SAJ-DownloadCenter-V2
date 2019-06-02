@@ -6,5 +6,5 @@ storiesOf('AgreeCheckbox', module)
     components: {
         AgreeCheckbox
     },
-    template: `<div><AgreeCheckbox /></div>`
+    template: `<div><AgreeCheckbox>「<a href="hogeho">各種使用に関して</a>」に同意します。</AgreeCheckbox></div>`
   }))

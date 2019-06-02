@@ -1,7 +1,9 @@
 <template>
-  <div class="wrapper">
-    <input type="checkbox" id="box">
-    <label for="box" class="label">「<a href="hogeho">各種使用に関して</a>」に同意します。</label>
+  <div class="ag-box-wrapper">
+    <input type="checkbox" id="box" v-bind:value="value" v-on:click="$emit('input', !value)">
+    <label for="box" class="label">
+      <slot />
+    </label>
   </div>
 </template>
 
@@ -9,13 +11,19 @@
 
 export default {
   name: 'agreeCheckbox',
-  props: ['link']
+  props: {
+    value: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
 <style scoped>
-.wrapper{
-  padding: 1rem;
+.ag-box-wrapper{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .label{
   font-size: 1.3rem;
