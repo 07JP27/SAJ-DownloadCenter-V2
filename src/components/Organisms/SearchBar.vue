@@ -1,16 +1,13 @@
 <template>
-  <v-layout row wrap>
-        <v-flex xs12 sm9 md9>
-          <v-text-field label="Solo" placeholder="検索" solo></v-text-field>
-        </v-flex>
-        <v-flex sm1 md1></v-flex>
-        <v-flex xs3 sm1 md1>
-          <img src="../../assets/icon/th-solid.svg" class="icon-button" />
-        </v-flex>
-        <v-flex xs3 sm1 md1>
-          <img src="../../assets/icon/list-solid.svg" class="icon-button" />
-        </v-flex>
-      </v-layout>
+  <b-row>
+    <b-col sm="10">
+      <b-form-input size="lg" placeholder="Search"></b-form-input>
+    </b-col>
+    <b-col sm="2">
+      <fa-icon size="lg" class="icon" icon="th-large" />
+      <fa-icon size="lg" class="icon" icon="list" />
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -20,7 +17,9 @@ export default {
 </script>
 
 <style scoped>
-.icon-button{
-  height: 3rem;
+.icon{
+  font-size: 3rem;
+  color: gray;
+  margin-right: 1rem;
 }
 </style>
