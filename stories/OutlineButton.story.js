@@ -6,5 +6,5 @@ storiesOf('OutlineButton', module)
     components: {
       OutlineButton
     },
-    template: `<div style='background-color:green; height:10rem; width:50rem'><OutlineButton></OutlineButton></div>`
+    template: `<div style='background-color:#115740; height:10rem; width:50rem'><OutlineButton style="padding:5rem;"></OutlineButton></div>`
   }))

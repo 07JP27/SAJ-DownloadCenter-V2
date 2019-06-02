@@ -1,5 +1,7 @@
 <template>
-  <a class="btn-large" :href="link">PRツールを見る</a>
+  <div>
+    <a class="btn-large" :href="link"><span>ツールを見る</span></a>
+  </div>
 </template>
 
 <script>
@@ -15,10 +17,12 @@ export default {
     border: solid 1.5px white;
     border-radius: 8px;
     z-index: 1;
-    color: #fff;
     text-align: center;
     cursor: pointer;
     padding: 10px 20px;
     text-decoration: none;
+}
+.btn-large span{
+    color: #fff;
 }
 </style>
