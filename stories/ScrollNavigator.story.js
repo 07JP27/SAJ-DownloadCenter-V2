@@ -6,5 +6,5 @@ storiesOf('ScrollNavigator', module)
     components: {
         ScrollNavigator
     },
-    template: `<div style='background-color:#115740; height:10rem; width:50rem'><ScrollNavigator></ScrollNavigator></div>`
+    template: `<div style='background-color:#115740; height:30rem; width:100rem'><ScrollNavigator></ScrollNavigator></div>`
   }))
