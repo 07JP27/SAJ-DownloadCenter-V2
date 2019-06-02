@@ -3,16 +3,15 @@
     <b-container>
 
       <div class="box">
-        <h1>このサイトについて</h1>
+        <h2>このサイトについて</h2>
           <div class="box-content">
             <p>このサイトは、ボーイスカウト日本連盟の加盟員が広報活動や組織拡充活動のためのさまざまな素材を取得できるサイトです。</p>
-            <router-link to='/about' class="text-md-right">各種使用・著作権等に関して（必ずお読みください）</router-link>
           </div>
-        <v-divider></v-divider>
+        <hr />
       </div>
 
       <div class="box">
-        <h1>各種使用に関して</h1>
+        <h2>各種使用に関して</h2>
           <div class="box-content">
             <p>
               このサイトに掲載しているロゴ等は、日本におけるスカウト運動の統一のイメージを示すもので、ボーイスカウトの広報活動や組織拡充活動等に使用するものです。
@@ -42,20 +41,18 @@
               <p>ムービーやその他媒体に関しては、改変禁止です。なお、営利目的での上映や使用は固く禁じられています。</p>
             </div>
           </div>
-        <v-divider></v-divider>
+        <hr />
       </div>
 
       <div class="box">
-        <h1>お問合せ先</h1>
+        <h2>お問合せ先</h2>
           <div class="box-content">
             <p>
               ボーイスカウト日本連盟事務局 社会連携・広報部<br />
               Eメール:pr@scout.or.jp / 電話:03-6913-6262（代表）
             </p>
           </div>
-        <v-divider></v-divider>
       </div>
-
     </b-container>
   </div>
 </template>
