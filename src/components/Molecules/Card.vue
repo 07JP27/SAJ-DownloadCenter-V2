@@ -1,12 +1,11 @@
 <template>
-  <router-link :to="link">
+  <router-link class="link" :to="link">
     <b-card
     :title="title"
     :img-src="img"
     img-alt="Image"
     img-top
     tag="article"
-    style="max-width: 20rem;"
     class="mb-2"
     >
     </b-card>
@@ -25,8 +24,14 @@ export default {
 </script>
 
 <style scoped>
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   margin-right: 1rem;
+  max-width: 16rem;
 }
 
 .card:hover {

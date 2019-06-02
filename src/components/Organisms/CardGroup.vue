@@ -1,9 +1,9 @@
 <template>
     <div class="card-group">
-      <h1>{{title}}</h1>
+      <h2>{{title}}</h2>
       <b-card-group>
         <div :data-index="index" :key="card.id" v-for="(card, index) in cards">
-        <card :title="card.title" :img="card.img" :link="card.link"></card>
+          <card :title="card.title" :img="card.img" :link="card.link"></card>
         </div>
       </b-card-group>
     </div>
@@ -25,11 +25,10 @@ export default {
 </script>
 
 <style scoped>
-.card-group{
-  margin-bottom: 2rem;
+h2{
+  width: 100%;
 }
-
-.card-group-body{
-  padding-top: 0;
+.card-group{
+  margin-bottom: 1.5rem;
 }
 </style>

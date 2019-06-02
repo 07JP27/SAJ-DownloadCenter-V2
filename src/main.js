@@ -18,7 +18,6 @@ Vue.use(VueParticles)
 library.add(faThLarge, faList)
 Vue.component('fa-icon', FontAwesomeIcon)
 
-
 new Vue({
   router,
   store,

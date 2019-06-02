@@ -93,7 +93,7 @@ export default {
 }
 #main {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   width: 80vw;

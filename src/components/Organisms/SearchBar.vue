@@ -1,5 +1,5 @@
 <template>
-  <b-row>
+  <b-row class="wrapper">
     <b-col sm="10">
       <b-form-input size="lg" placeholder="Search"></b-form-input>
     </b-col>
@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style scoped>
+.wrapper{
+  margin-bottom: 2rem;
+}
 .icon{
   font-size: 3rem;
   color: gray;

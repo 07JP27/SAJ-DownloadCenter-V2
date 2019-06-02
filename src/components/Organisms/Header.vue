@@ -1,5 +1,5 @@
 <template>
-  <b-navbar>
+  <b-navbar fixed="top">
     <router-link to="/">
       <b-navbar-brand>
         <img alt="Logo" src="../../assets/logo.svg" height="50px" />

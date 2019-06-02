@@ -1,12 +1,11 @@
 <template>
   <div>
     <hero></hero>
-    <v-container>
+    <b-container>
       <IntroSection></IntroSection>
-      <v-divider class="divider" />
       <SearchBar></SearchBar>
       <CardGroup :data-index="index" :key="prTool.id" v-for="(prTool, index) in prTools" :title="prTool.title" :cards="prTool.contents"></CardGroup>
-    </v-container>
+    </b-container>
   </div>
 </template>
 

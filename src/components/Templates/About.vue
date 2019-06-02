@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <v-container>
+    <b-container>
 
       <div class="box">
         <h1>このサイトについて</h1>
@@ -56,7 +56,7 @@
         <v-divider></v-divider>
       </div>
 
-    </v-container>
+    </b-container>
   </div>
 </template>
 

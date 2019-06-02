@@ -27,3 +27,17 @@ storiesOf('CardGroup', module)
     },
     template: `<div><CardGroup :cards="data" :title="title"></CardGroup></div>`
   }))
+  .add('Single', () => ({
+    components: {
+      CardGroup
+    },
+    data () {
+      return {
+        title: 'タイトルタイトル',
+        data: [
+          { title: 'ガイドライン', img: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', link: '/brandguide.pdf' }
+        ]
+      }
+    },
+    template: `<div><CardGroup :cards="data" :title="title"></CardGroup></div>`
+  }))
