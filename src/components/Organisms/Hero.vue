@@ -24,6 +24,7 @@
     <div id="main" class="has-text-centered">
       <h1 class="title is-1"><img src="../../assets/title.svg" /></h1>
       <OutlineButton :href="link"></OutlineButton>
+      <ScrollNavigator></ScrollNavigator>
     </div>
 </div>
 </template>
@@ -31,11 +32,13 @@
 <script>
 import Granim from 'granim'
 import OutlineButton from '../Atoms/OutlineButton'
+import ScrollNavigator from '../Atoms/ScrollNavigator'
 
 export default {
   name: 'Hero',
   components: {
-    OutlineButton
+    OutlineButton,
+    ScrollNavigator
   },
   props: ['link'],
   data () {
