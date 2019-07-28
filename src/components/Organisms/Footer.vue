@@ -1,17 +1,17 @@
 <template>
   <footer class="footer">
     <div class="scoutGreen text-center">
-      <img class="footer-logo" src="../../assets/footer-logo.svg" width="40%" >
-      <div class="row">
-        <div class="offset-md-4 col-md-4">
-          <div class="row">
-            <img class="col-md-3" src="../../assets/icon/twitter.svg">
-            <img class="col-md-3" src="../../assets/icon/facebook.svg">
-            <img class="col-md-3" src="../../assets/icon/youtube.svg">
-            <img class="col-md-3" src="../../assets/icon/instagram.svg">
-          </div>
-        </div>
+      <div class="row offset-md-4 col-md-4 py-2">
+        <b-img center class="footer-logo" src="../../assets/footer-logo.svg"></b-img>
       </div>
+      <b-row class="mx-5 justify-content-md-center" align-self="center">
+        <b-col md="3" class="mb-3">
+          <b-img class="col-md-3" src="../../assets/icon/twitter.svg"></b-img>
+          <b-img class="col-md-3" src="../../assets/icon/facebook.svg"></b-img>
+          <b-img class="col-md-3" src="../../assets/icon/youtube.svg"></b-img>
+          <b-img class="col-md-3" src="../../assets/icon/instagram.svg"></b-img>
+        </b-col>
+      </b-row>
     </div>
     <div class="darkScoutGreen">
       <div class="container">
