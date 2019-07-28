@@ -3,8 +3,8 @@
     <hero></hero>
     <b-container>
       <IntroSection></IntroSection>
-      <SearchBar></SearchBar>
-      <CardGroup :data-index="index" :key="prTool.id" v-for="(prTool, index) in prTools" :title="prTool.title" :cards="prTool.contents"></CardGroup>
+      <SearchBar :query="query"></SearchBar>
+      <CardGroup :data-index="index" :key="prTool.id" v-for="(prTool, index) in filteredPrTools" :title="prTool.title" :cards="prTool.contents"></CardGroup>
     </b-container>
   </div>
 </template>
@@ -14,7 +14,7 @@ import Hero from '../Organisms/Hero'
 import IntroSection from '../Molecules/IntroSection'
 import SearchBar from '../Organisms/SearchBar'
 import CardGroup from '../Organisms/CardGroup'
-import prTools from '../../data'
+import prTools from '../../assets/data.json'
 
 export default {
   name: 'home',
@@ -24,7 +24,22 @@ export default {
     SearchBar,
     CardGroup
   },
-  mixins: [ prTools ]
+  data: function () {
+    return {
+      prTools: prTools,
+      query: ''
+    }
+  },
+  computed: {
+    filteredPrTools: function () {
+      if (this.query === '') {
+        return this.prTools
+      } else {
+        // TODO:filterprosess
+        return this.prTools
+      }
+    }
+  }
 }
 </script>
 

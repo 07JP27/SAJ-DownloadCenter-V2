@@ -12,11 +12,8 @@
 </template>
 
 <script>
-import prTools from '../../data'
-
 export default {
-  name: 'Header',
-  mixins: [ prTools ]
+  name: 'Header'
 }
 </script>
 

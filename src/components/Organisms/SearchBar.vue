@@ -1,7 +1,7 @@
 <template>
   <b-row class="wrapper">
     <b-col sm="10">
-      <b-form-input size="lg" placeholder="Search"></b-form-input>
+      <b-form-input size="lg" placeholder="Search" v-model="query"></b-form-input>
     </b-col>
     <b-col sm="2">
       <fa-icon size="lg" class="icon" icon="th-large" />
@@ -12,7 +12,10 @@
 
 <script>
 export default {
-  name: 'SearchBar'
+  name: 'SearchBar',
+  props: {
+    query: String
+  }
 }
 </script>
 

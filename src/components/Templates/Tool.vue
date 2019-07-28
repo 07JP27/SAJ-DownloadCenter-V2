@@ -9,12 +9,13 @@
         allowfullscreen
       ></b-embed>
       <AgreeCheckbox v-model="isAgree">「<a href="hogeho">各種使用に関して</a>」に同意します。</AgreeCheckbox>
-      <div>
-       <b-button class="btn" variant="success" :disabled="!isAgree">Button</b-button>
-       <b-button class="btn" variant="success" :disabled="!isAgree">Button</b-button>
-       <b-button class="btn" variant="success" :disabled="!isAgree">Button</b-button>
-       <b-button class="btn" variant="success" :disabled="!isAgree">Button</b-button>
-       <b-button class="btn" variant="success" :disabled="!isAgree">Button</b-button>
+      <div class="mb-3">
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
+          <b-button class="btn" variant="info" href="https://qiita.com/" :disabled="!isAgree">Button</b-button>
       </div>
     </b-container>
   </div>
@@ -22,14 +23,12 @@
 
 <script>
 import AgreeCheckbox from '../Atoms/AgreeCheckbox'
-import prTools from '../../data'
 
 export default {
   name: 'tool',
   components: {
     AgreeCheckbox
   },
-  mixins: [ prTools ],
   props: [
     'isAgree'
   ]
